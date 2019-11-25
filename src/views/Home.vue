@@ -32,7 +32,7 @@
 <hr />
 <div class="row">
 <div class="numberofTodos col-md-6 text-left">
- <p>Tasks Done:{{remaining}}</p>
+ <p>Tasks Done</p>
 </div>
 
 </div>
@@ -86,7 +86,6 @@ export default {
       todo.completed = !todo.completed
     },
       toggleSelect: function() {
-        debugger
       var select = this.selectAll;
       this.todos.forEach(function(todo) {
         todo.completed = !select;
